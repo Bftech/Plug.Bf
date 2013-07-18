@@ -1,0 +1,32 @@
+{
+"name" :"Plug.Bf",
+"version" :"0.1",
+"description" :"An extension for Plug.dj",
+"background" : {
+    "scripts": ["js/background.js"]
+  },
+"manifest_version": 2,
+"icons": {
+	"19": "icon.png",
+	"38": "largeIcon.png"
+  },
+"page_action": {
+	"default_title": "Plug.Bf",
+	"default_icon": "icon.png",
+	"default_popup": "menu.html"
+ },
+"content_scripts": [
+  	{
+	  "matches": ["*://plug.dj/*"],
+	  "js": ["js/plugbf.js"],
+	  "css": ["css/design.css"],
+	  "run_at": "document_start"
+	}
+  ], 
+"permissions": [
+	"*://*.plug.dj/*",
+	"storage",
+	"notifications",
+	"tabs"
+  ]
+}
