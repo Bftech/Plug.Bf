@@ -20,3 +20,4 @@ if (obj == null) return; // no dj
   
   API.sendChat(msg);
 }
+alert('PlugStat by Bftech enabled');
