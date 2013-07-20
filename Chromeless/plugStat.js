@@ -6,7 +6,7 @@ if (obj == null) return; // no dj
   var lastPlay = obj.lastPlay;
   var lastVid = lastPlay.media;
   var lastStat = lastPlay.score;
-  var msg = '';
+  var msg = '/me ';
   msg += lastVid.author;
   msg += ' - ';
   msg += lastVid.title;
